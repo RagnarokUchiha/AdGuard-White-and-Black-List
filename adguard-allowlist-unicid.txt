@@ -34,8 +34,8 @@
 ! ==========================================================
 
 ! Biblioteca virtual
-!@@||minhabiblioteca.com.br^$important
-!@@||digitalpages.com.br^$important
+@@||minhabiblioteca.com.br^$important
+@@||digitalpages.com.br^$important
 
 ! Vídeos embutidos nas aulas
 !@@||vimeo.com^$important
@@ -46,4 +46,4 @@
 !@@||googlevideo.com^$important
 
 ! Vídeo/aulas gravadas (Echo360)
-!@@||echo360.org^$important
+@@||echo360.org^$important
