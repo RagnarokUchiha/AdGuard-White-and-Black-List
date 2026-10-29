@@ -1,0 +1,49 @@
+! ==========================================================
+! AdGuard Home - Allowlist: Cruzeiro do Sul Virtual / UNICID
+! Cole em: Filtros > Regras de filtragem personalizadas
+!   (ou em Filtros > Listas de permissões DNS > Editar)
+!
+! Sintaxe: @@||dominio^  libera o domínio E todos os subdomínios
+! ($important garante que a regra vença qualquer lista de bloqueio)
+! ==========================================================
+
+! ---------- 1) Domínios solicitados (+ todos os subdomínios) ----------
+@@||cruzeirodosulvirtual.com.br^$important
+@@||unicid.edu.br^$important
+
+! ---------- 2) Portal do aluno / login (SSO do grupo) ----------
+! novoportal.cruzeirodosul.edu.br = Área do Aluno usada pela UNICID
+@@||cruzeirodosul.edu.br^$important
+@@||cruzeirodosuleducacional.com.br^$important
+@@||cruzeirodosuleducacional.edu.br^$important
+
+! ---------- 3) Plataforma Blackboard (AVA) ----------
+@@||blackboard.com^$important
+@@||blackboardcdn.com^$important
+! Blackboard Collaborate (aulas ao vivo / webconferência)
+@@||bbcollab.com^$important
+@@||elluminate.com^$important
+
+! ---------- 4) Atividades de programação integradas ao Blackboard ----------
+! (cursos de tecnologia)
+@@||beecrowd.com^$important
+
+! ==========================================================
+! OPCIONAIS - descomente (remova o "!" do início) SOMENTE se
+! o Log de consultas mostrar que algo disso está sendo bloqueado
+! ==========================================================
+
+! Biblioteca virtual
+!@@||minhabiblioteca.com.br^$important
+!@@||digitalpages.com.br^$important
+
+! Vídeos embutidos nas aulas
+!@@||vimeo.com^$important
+!@@||vimeocdn.com^$important
+!@@||youtube.com^$important
+!@@||youtube-nocookie.com^$important
+!@@||ytimg.com^$important
+!@@||googlevideo.com^$important
+
+! Vídeo/aulas gravadas (Echo360)
+!@@||echo360.org^$important
